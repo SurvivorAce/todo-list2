@@ -27,6 +27,7 @@
 				}
  
 				?>
+
 			</ul>
 		</div>
 		<form class="add-new-task" autocomplete="off">
@@ -43,7 +44,7 @@
 			var new_task = $('.add-new-task input[name=new-task]').val();
 	
 			if(new_task != '') {
-				$.post('Includes/add-task.php', {task: new_task}, function(data) {
+				$.post('includes/add-task.php', {task: new_task}, function(data) {
 					$('add-new-task input[name=new-task]').val();
 						$(data).appendTo('.task-list ul').hide().fadeIn();
 				});
@@ -56,11 +57,11 @@
 		var current_element = $(this);
 		var task_id = $(this).attr('id');
 		
-		$.post('inludes/delete-task.php', {id: task_id}, function(){
+		$.post('includes/delete-task.php', {id: task_id}, function(){
 			current_element.parent().fadeOut("fast", function(){
 			$(this).remove();
 			});
 		});
-	});	
+	});		
 </script>
 </html>
