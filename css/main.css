@@ -3,6 +3,10 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+div {
+	padding-bottom: 10px;
+}
+
 body {
 	background: url("../images/illuminati.png")no-repeat center fixed;
 	font: normal 14px 'Open Sans', Arial, sans-serif;
@@ -28,6 +32,11 @@ nav ul li a {
 
 nav ul li a:hover {
 	color: red;
+	text-decoration: none;
+}
+
+label {
+	font-size: 20px;
 }
 
 @media screen and(max-width:375px){
@@ -61,6 +70,7 @@ nav ul li a:hover {
 
 .add-new-task{
 	height: 22.222;
+	opacity: 0.7;
 	padding-bottom: 10px;
 	padding-top: 10px;
 	padding-left: 110px;

@@ -2,21 +2,21 @@
 	require_once(__DIR__ . "/../model/config.php")
 ?>
 
-<h1>Login</h1>
+<h1 style="color:black">Login</h1>
 
 <form method="post" action="<?php echo $path . "controller/login-user.php"; ?>">
 	<div>
-		<label for="username">Username: </label>
+		<label for="username" style="color:black">Username: </label>
 		<input type="text" name="username" />
 	</div>
 
 	<div>
-		<label for="password">Password: </label> 
+		<label for="password" style="color:black">Password: </label> 
 		<input type="password" name="password" /> 
 	</div>
 
 	<div>
-		<button type="submit">Submit-URU</button> 
+		<button type="submit" style="color:black">Submit-URU</button> 
 	</div>
 
 </form>
