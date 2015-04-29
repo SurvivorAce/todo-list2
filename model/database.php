@@ -37,7 +37,7 @@
 
 			else {
 				//* Echoes text if database already exists.
-				echo "<p>Database already exists</p>";
+				//echo "<p>Database already exists</p>";
 			}			
 		}
 
